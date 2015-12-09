@@ -1,0 +1,20 @@
+#Hacker{
+    top: 100%;
+    text-align: center;
+}
+
+#hacker-text{
+    min-width: 310px;
+}
+
+#hacker-text-keyword1, #hacker-text-keyword2{
+    color: red;
+    font-weight: bold;
+}
+
+#hacker-search,#hacker-improve{
+    visibility: hidden;
+}
+#hacker-love{
+    opacity: 0;
+}

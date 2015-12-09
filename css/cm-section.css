@@ -1,0 +1,45 @@
+#cm-img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 2px 4px 0 rgb(68,108,220);;
+    border: 1px solid azure;
+}
+
+#cm-title{
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%,93px,0);
+}
+
+#cm-subtitle{
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%,120px,0);
+}
+
+#cm-text{
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%,150px,0);
+    white-space: nowrap;
+}
+
+#cm-svg{
+    position: absolute !important;
+    left: 50%;
+    transform: translate3d(-50%,195px,0);
+}
+
+#cm2-1,#cm2-2,#cm2-3,#cm3-1{
+    visibility: hidden;
+}
+
+@media all and (orientation:portrait) {
+    #cm-holder{
+        top: 15px !important;
+    }
+}

@@ -1,0 +1,12 @@
+#Contact{
+    top: 100%;
+}
+
+address a{
+    white-space: nowrap;
+}
+
+address svg{
+    margin-bottom: -17px;
+    margin-right: 10px;
+}
