@@ -1,21 +1,21 @@
 #Charif Mews Static Website
 
-The challenge was to create a website where the html/css/js files are combined under 64kB gzipped. Used greensock
+The challenge was to create a website where the html/css/js files combined are sized under 64kB gzipped. I used the greensock
 animation library and inline svg's (optimized with svgo).
 
 ### Page Analysis
 
 | Page size (gzip)|   Requests    | 
 | --------------- |:-------------:| 
-| Total: 58.3 kB  |  4            | 
 | JS: 39.2 kB     |  1            |   
 | HTML: 12.1 kB   |  1            |    
-| Images: 6.9 kB  |  2            |    
+| Images: 6.9 kB  |  2            |   
+| Total: 58.3 kB  |  4            | 
+
 
 ### Performance
 
-Performance matters and I used a pre-loader to lower the speed index score (Lower is better)
-in combination with a webpack compiled js defer script in the head.
+Performance matters and that's why I used a pre-loader to lower the speed index score (how fast the website is shown, lower is better) in combination with a webpack compiled js defer script in the head (defer script in head is much faster than in the body).
 
 #### Pagespeed insights
 
@@ -49,7 +49,6 @@ SSL-report: A+
 
 ### Future improvements
 
-The gzipped size is now at 63.8kB, not many room for extra content. However I can save some extra space because I don't
-use all of the TweenMax included JS files. Code can also be cleaner.
+The gzipped size is now at 58.3kB. Code can also be cleaner and will test different cdn's for a faster load time worldwide (if possible). 
 
 
