@@ -3,6 +3,15 @@
 The challenge was to create a website where the html/css/js files are combined under 64kB gzipped. Used greensock
 animation library and inline svg's (optimized with svgo).
 
+### Page Analysis
+
+| Page size (gzip)|   Requests    | 
+| --------------- |:-------------:| 
+| Total: 58.3 kB  |  4            | 
+| JS: 39.2 kB     |  1            |   
+| HTML: 12.1 kB   |  1            |    
+| Images: 6.9 kB  |  2            |    
+
 ### Performance
 
 Performance matters and I used a pre-loader to lower the speed index score (Lower is better)
@@ -12,20 +21,21 @@ in combination with a webpack compiled js defer script in the head.
 
 Pagespeed insights is used for speed and user experience:
 
-Mobile score is 100/100
+Mobile score is 99/100
 Desktop score is 97/100
 
 [Check for yourself](https://developers.google.com/speed/pagespeed/insights/?url=charifmews.com)
 
 #### Tools.pingdom.com speed test
 
-Dallas (Texas) - Load time around 350 ms
-New York - Load time around 550 ms
-San Jose - Load time around 150 ms (Server is located in San Francisco)
-Amsterdam - Load time around 980 ms
-Stockholm - Load time around 940 ms
-Melbourne - Load time around 1150 ms
-
+| Location        |   Load time   | 
+| --------------- |:-------------:| 
+| San Jose        |  135ms        |    
+| Dallas (Texas)  |  346ms        | 
+| New York        |  507ms        |   
+| Amsterdam       |  769ms        |   
+| Stockholm       |  936ms        |   
+| Melbourne       |  995ms        |   
 
 ### SSL
 
