@@ -1,7 +1,11 @@
-var TweenMax = require('./gsap/TweenMax.js');
+var TweenLite = require('./gsap/TweenLite.js');
+var TimelineMax = require('./gsap/TimelineMax.js');
+var css = require('./gsap/uncompressed/plugins/CSSPlugin.js');
+var attr = require('./gsap/uncompressed/plugins/AttrPlugin.js');
 var morphSVG = require('./gsap/MorphSVGPlugin.js');
 var scrambleText = require('./gsap/ScrambleTextPlugin.js');
 var text = require('./gsap/TextPlugin.js');
+var ease = require('./gsap/uncompressed/easing/EasePack.js');
 
 require('./css/layout.css');
 require('./css/nav.css');
@@ -16,7 +20,7 @@ var slides = ['#CharifMews','#Hacker','#Ethics','#Contact','#Keynotes'],
     y_pos = null;
 
 (function(){
-    var preloader = new TimelineLite();
+    var preloader = new TimelineMax();
     if (window.msCrypto || window.crypto){
         preloader.to("#logo", 1,{boxShadow:'0 0 15px 0 white', backgroundColor:'white'});
         preloader.to("#ring2",1,{width:'100px',height:'100px'},'-=0.7');
@@ -71,17 +75,17 @@ window.onload = function(){
 window.navToSlide = function(slideNumber){
     for(var i = 1; i<=slides.length;i++){
         if(i<slideNumber){
-            TweenMax.to(slides[i-1].toString(),0.2,{top:'-100%',ease:Expo.easeInOut});
-            TweenMax.to(navdots[i-1].toString(),0.2,{backgroundColor:"#fff",ease:Expo.easeInOut});
+            TweenLite.to(slides[i-1].toString(),0.2,{top:'-100%',ease:Expo.easeInOut});
+            TweenLite.to(navdots[i-1].toString(),0.2,{backgroundColor:"#fff",ease:Expo.easeInOut});
         }
         else if(i===slideNumber){
-            TweenMax.to(slides[slideNumber-1].toString(),1,{top:0,ease:Expo.easeInOut});
-            TweenMax.to(navdots[slideNumber-1].toString(),1,{backgroundColor:"#203470",ease:Expo.easeInOut});
+            TweenLite.to(slides[slideNumber-1].toString(),1,{top:0,ease:Expo.easeInOut});
+            TweenLite.to(navdots[slideNumber-1].toString(),1,{backgroundColor:"#203470",ease:Expo.easeInOut});
             window.location.hash = slides[slideNumber-1].toString();
         }
         else{
-            TweenMax.to(slides[i-1].toString(),0.2,{top:'100%',ease:Expo.easeInOut});
-            TweenMax.to(navdots[i-1].toString(),0.2,{backgroundColor:"#fff",ease:Expo.easeInOut});
+            TweenLite.to(slides[i-1].toString(),0.2,{top:'100%',ease:Expo.easeInOut});
+            TweenLite.to(navdots[i-1].toString(),0.2,{backgroundColor:"#fff",ease:Expo.easeInOut});
         }
     }
 };

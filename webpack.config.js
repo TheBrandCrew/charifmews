@@ -20,6 +20,9 @@ module.exports = {
             { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' }
         ]
     },
-    postcss: [ autoprefixer({ browsers: browserlist }) ]
+    postcss: [ autoprefixer({ browsers: browserlist }) ],
+    externals: {
+        'TweenLite': 'TweenLite'
+    }
 };
 
