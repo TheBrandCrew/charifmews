@@ -6,7 +6,16 @@ var concatCss = require('gulp-concat-css');
 var uglify = require('gulp-uglify');
 var minify = require('gulp-minify');
 var autoprefixer = require('autoprefixer');
-var browserlist = ['ie 11','ff >= 21', 'chrome >= 11', 'safari >= 6.1', 'ios >= 7.1', "android >= 4.4", 'bb >=10', 'ie_mob 11'];
+var browserlist = [
+    'ie 11',
+    'ff >= 21',
+    'chrome >= 11',
+    'safari >= 6.1',
+    'ios >= 7.1',
+    "android >= 4.4",
+    'bb >=10',
+    'ie_mob 11'
+];
 
 gulp.task('minify-preloader', function() {
     return gulp.src('preloader/*.css')
@@ -16,7 +25,7 @@ gulp.task('minify-preloader', function() {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('compress', function() {
+gulp.task('minify-js', function() {
     return gulp.src('final.js')
         .pipe(uglify())
         .pipe(minify())
@@ -32,3 +41,5 @@ gulp.task('minify-html', function() {
         .pipe(minifyHTML(opts))
         .pipe(gulp.dest('./production/'));
 });
+
+gulp.task('default',['minify-preloader','minify-js','minify-html']);

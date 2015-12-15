@@ -4,7 +4,7 @@
   "description": "Static Charif Mews site",
   "main": "start.js",
   "scripts": {
-    "production": "gulp minify-html && webpack -p && gulp compress"
+    "production": "webpack -p && gulp"
   },
   "author": "Charif Mews",
   "license": "MIT",
