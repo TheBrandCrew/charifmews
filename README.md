@@ -5,12 +5,12 @@ animation library and inline svg's (optimized with svgo).
 
 ### Page Analysis
 
-| Page size (gzip)|   Requests    | 
-| --------------- |:-------------:| 
-| JS: 39.2 kB     |  1            |   
-| HTML: 12.1 kB   |  1            |    
-| Images: 6.9 kB  |  2            |   
-| Total: 58.3 kB  |  4            | 
+|       | Page size (gzip)|   Requests    | 
+| ------|--------- |:-------------:| 
+| JS    | 39.4 kB     |  1            |   
+| HTML  | 12.2 kB   |  1            |    
+| Images| 6.9 kB  |  2            |   
+| Total | 58.5 kB  |  4            | 
 
 
 ### Performance
@@ -21,7 +21,7 @@ Performance matters and that's why I used a pre-loader to lower the speed index 
 
 Pagespeed insights is used for speed and user experience:
 
-Mobile score is 99/100
+Mobile score is 100/100 and 99/100
 Desktop score is 97/100
 
 [Check for yourself](https://developers.google.com/speed/pagespeed/insights/?url=charifmews.com)
@@ -43,12 +43,12 @@ SSL is optional (don't force it for a informational website).
 
 #### SSL-labs
 
-SSL-report: A+
+SSL-report: A
 
 [Check for yourself](https://www.ssllabs.com/ssltest/analyze.html?d=charifmews.com&latest)
 
 ### Future improvements
 
-The gzipped size is now at 58.3kB. Code can also be cleaner and will test different cdn's for a faster load time worldwide (if possible). 
+The gzipped size is now at 58.5kB. Code can also be cleaner.
 
 
