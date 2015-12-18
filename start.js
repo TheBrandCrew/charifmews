@@ -35,6 +35,7 @@ var slides = ['#CharifMews','#Hacker','#Ethics','#Contact','#Keynotes'],
         preloader.to('#down',1.2,{height:'0',ease:'Power2.easeInOut'},'open');
         introAnimation();
         hackerAnimation();
+        resizer();
     }
     else {
         document.getElementById('ring2').id = 'ring3';
@@ -90,6 +91,10 @@ window.navToSlide = function(slideNumber){
     }
 };
 
+window.onresize = function(){
+    resizer()
+};
+
 document.addEventListener("keydown", function(e){
     if(e.keyCode === 38) {
         navToSlide(Math.max((slides.indexOf(window.location.hash)),1));
@@ -123,3 +128,17 @@ function handleTouchMove(evt) {
     y_pos = null;
 };
 
+function resizer(){
+    if(window.innerHeight>700){
+        TweenLite.to('#cm-svg',1,{attr:{width:"300px",height:"300px"}});
+        TweenLite.to('#hacker-svg',1,{attr:{width:"300px",height:"300px"}});
+    }
+    else if(window.innerHeight<=520){
+        TweenLite.to('#cm-svg',1,{attr:{width:"150px",height:"150px"}});
+        TweenLite.to('#hacker-svg',1,{attr:{width:"150px",height:"150px"}});
+    }
+    else{
+        TweenLite.to('#cm-svg',1,{attr:{width:"200px",height:"200px"}});
+        TweenLite.to('#hacker-svg',1,{attr:{width:"200px",height:"200px"}});
+    }
+}

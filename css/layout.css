@@ -63,7 +63,10 @@ address{
 }
 
 /*Webkit bug*/
-svg { max-height: 200px;}
+svg{
+    max-height: 200px;
+    max-width: 200px;
+}
 
 .arrow-down{
     position: absolute;
@@ -96,5 +99,20 @@ svg { max-height: 200px;}
     section{
         width: calc(100% - 160px);
         height: 100%;
+    }
+}
+
+@media all and (min-height:600px ){
+    svg{
+        margin-top: 18px;
+        max-height: 300px;
+        max-width: 300px;
+    }
+}
+
+@media all and (max-height:520px ){
+    svg{
+        max-height: 150px;
+        max-width: 150px;
     }
 }
