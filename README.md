@@ -30,16 +30,16 @@ Desktop score is 97/100
 
 | Location        |   Load time   | 
 | --------------- |:-------------:| 
-| San Jose        |  135ms        |    
-| Dallas (Texas)  |  346ms        | 
-| New York        |  507ms        |   
-| Amsterdam       |  769ms        |   
-| Stockholm       |  936ms        |   
-| Melbourne       |  995ms        |   
+| San Jose        |  227ms        |    
+| Dallas (Texas)  |  190ms        | 
+| New York        |  230ms        |   
+| Amsterdam       |  430ms        |   
+| Stockholm       |  323ms        |   
+| Melbourne       |  480ms        |   
 
 ### SSL
 
-SSL is optional (don't force it for a informational website).
+SSL is optional (don't force it for an informational website).
 
 #### SSL-labs
 
