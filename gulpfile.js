@@ -32,6 +32,13 @@ gulp.task('minify-js', function() {
         .pipe(gulp.dest('./production/'));
 });
 
+gulp.task('minify-js-404', function() {
+    return gulp.src('404.js')
+        .pipe(uglify())
+        .pipe(minify())
+        .pipe(gulp.dest('./production/'));
+});
+
 gulp.task('minify-html', function() {
     var opts = {
         conditionals: true,
@@ -42,4 +49,4 @@ gulp.task('minify-html', function() {
         .pipe(gulp.dest('./production/'));
 });
 
-gulp.task('default',['minify-preloader','minify-js','minify-html']);
+gulp.task('default',['minify-preloader','minify-js','minify-js-404','minify-html']);
