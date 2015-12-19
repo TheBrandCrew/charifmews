@@ -23,7 +23,8 @@
     "gulp-util": "^3.0.7",
     "postcss-loader": "^0.8.0",
     "pretty-hrtime": "^1.0.1",
-    "style-loader": "^0.13.0"
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
   },
   "keywords": []
 }
