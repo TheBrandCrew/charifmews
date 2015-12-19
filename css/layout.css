@@ -116,3 +116,10 @@ svg{
         max-width: 150px;
     }
 }
+
+@media all and (max-height:380px){
+    svg{
+        max-height: 0;
+        max-width: 0;
+    }
+}
