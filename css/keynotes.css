@@ -7,3 +7,15 @@
 #keynote-link{
     font-size: 22px;
 }
+
+#Keynotes button{
+    background-color: white;
+    color:#4169E1 !important;
+    padding: 5px;
+}
+
+#Keynotes button:hover{
+    box-shadow: 0 2px 0 0 #4169E1 ;
+    transition-duration: 0.4s;
+    transform: translateY(-2px);
+}
