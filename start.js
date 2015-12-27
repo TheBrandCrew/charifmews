@@ -100,7 +100,7 @@ document.addEventListener("keydown", function(e){
         navToSlide(Math.max((slides.indexOf(window.location.hash)),1));
     }
     if(e.keyCode === 40) {
-        navToSlide(Math.min((slides.indexOf(window.location.hash)+2),5));
+        navToSlide(Math.min((slides.indexOf(window.location.hash)+2),slides.length));
     }
 },false);
 
@@ -120,7 +120,7 @@ function handleTouchMove(evt) {
         y_diff = y_pos - y_pos2;
 
     if ( y_diff > 0 ) {
-        navToSlide(Math.min((slides.indexOf(window.location.hash)+2),5));
+        navToSlide(Math.min((slides.indexOf(window.location.hash)+2),slides.length));
     } else {
         navToSlide(Math.max((slides.indexOf(window.location.hash)),1));
     }
