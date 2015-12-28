@@ -83,6 +83,12 @@ window.navToSlide = function(slideNumber){
             TweenLite.to(slides[slideNumber-1].toString(),1,{top:0,ease:Expo.easeInOut});
             TweenLite.to(navdots[slideNumber-1].toString(),1,{backgroundColor:"#203470",ease:Expo.easeInOut});
             window.location.hash = slides[slideNumber-1].toString();
+            if(slideNumber===slides.length){
+                TweenLite.to('#arrow-down',0.5,{opacity:0})
+            }
+            else{
+                TweenLite.to('#arrow-down',0.5,{opacity:1})
+            }
         }
         else{
             TweenLite.to(slides[i-1].toString(),0.2,{top:'100%',ease:Expo.easeInOut});
