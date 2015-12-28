@@ -15,8 +15,8 @@ require('./css/ethics.css');
 require('./css/contact.css');
 require('./css/keynotes.css');
 
-var slides = ['#CharifMews','#Hacker','#Ethics','#Contact','#Keynotes'],
-    navdots = ['#nav-logo','#nav-hacker','#nav-ethics','#nav-contact','#nav-keynotes'],
+window.slides = ['#CharifMews','#Hacker','#Ethics','#Contact','#Keynotes'];
+var navdots = ['#nav-logo','#nav-hacker','#nav-ethics','#nav-contact','#nav-keynotes'],
     y_pos = null;
 
 (function(){
@@ -91,16 +91,32 @@ window.navToSlide = function(slideNumber){
     }
 };
 
+window.getNextSlide= function(){
+    return Math.min(slides.indexOf(window.location.hash)+2,slides.length);
+};
+
+window.getPrevSlide= function(){
+    return Math.max((slides.indexOf(window.location.hash)),1);
+};
+
+window.nextArticle= function(){
+//    TODO: Implement next article function
+};
+
+window.prevArticle= function(){
+//    TODO: Implement prev article function
+};
+
 window.onresize = function(){
     resizer()
 };
 
 document.addEventListener("keydown", function(e){
     if(e.keyCode === 38) {
-        navToSlide(Math.max((slides.indexOf(window.location.hash)),1));
+        navToSlide(getPrevSlide());
     }
     if(e.keyCode === 40) {
-        navToSlide(Math.min((slides.indexOf(window.location.hash)+2),slides.length));
+        navToSlide(getNextSlide());
     }
 },false);
 

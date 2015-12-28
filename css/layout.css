@@ -68,12 +68,34 @@ svg{
     max-width: 200px;
 }
 
-.arrow-down{
-    position: absolute;
+#arrow-down{
+    position: fixed;
     bottom: 0;
-    left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    z-index: 1;
+    touch-action: manipulation;
+}
+
+#arrow-right{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+    touch-action: manipulation;
+}
+
+#arrow-left{
+    position: fixed;
+    top: 50%;
+    transform: rotate(90deg);
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+    touch-action: manipulation;
 }
 
 @media all and (orientation:portrait) {
@@ -89,6 +111,12 @@ svg{
     article{
         top: 0%;
     }
+    #arrow-down{
+        left: 50%;
+    }
+    #arrow-left{
+        left: 0;
+    }
 }
 @media all and (orientation:landscape) {
     main{
@@ -99,6 +127,12 @@ svg{
     section{
         width: calc(100% - 160px);
         height: 100%;
+    }
+    #arrow-down{
+        left: calc(50% + 80px);
+    }
+    #arrow-left{
+        left: 160px;
     }
 }
 
