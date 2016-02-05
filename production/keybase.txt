@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/charifmews
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://charifmews.com
+  * I am charifmews (https://keybase.io/charifmews) on keybase.
+  * I have a public key with fingerprint EEEE 6B26 86C8 4E36 45A3  BA9A A6AE E520 3453 71A4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010106e2147de927ddbb64b0b5dbcb1a902207433ebf93f64b3bf7ba8071eb1d00380a",
+            "fingerprint": "eeee6b2686c84e3645a3ba9aa6aee520345371a4",
+            "host": "keybase.io",
+            "key_id": "a6aee520345371a4",
+            "kid": "010106e2147de927ddbb64b0b5dbcb1a902207433ebf93f64b3bf7ba8071eb1d00380a",
+            "uid": "942321c7f0e62be964d04b015effcf00",
+            "username": "charifmews"
+        },
+        "service": {
+            "hostname": "charifmews.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1454669803,
+    "expire_in": 157680000,
+    "prev": "5cc07dd6ead78d3a50b79f6c92d11a312aa9e1a6b4c9ec6bf000348b88298405",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMIrAnicrVJdSBRRFN4tzdzclKgoMYqpoEjkzv/MVkRsRklp9Mtq7XrvzB0dzJlt
+dlxdLSQtzDKjUgoKCsJ66AeyldIQMy2LIDWEsijoxajIKLCkIroj9VSPnftwued8
+33e/czi93skuj3trine8etWDY+5H3WfKXNvj1e+rKGSqMcpXRZXgiQvvVnHEDpXo
+KuWjAE2OgBmaE1UsM6KqIiRwCCBeRQqioQwYBogcy2KkyaxGSizSRAQlINIY0SoA
+rAQglUlpulGErbClGzaRxSQExAiSoEgcZgWOhyyCMoQCxJhnAMvxrEhDjhCLzYjD
+IOYQjOAs3SQ58ghN2PsH/j/7LpuQkzmGZWhF1AAWGIRlgVMBUaN5rGmKBoADjGDL
+gKWYoJViaOlaKS6PUPsyKZKP6gp2Ruv08hcmSzFLCT9smbapmLtJrdi2wxGfw7Vj
+YQdcjlHot0wI6YZKZkkYUWxFdNOgfDRBKrbu6NIczwmCLAE2k8IVYd3CId1B8KIg
+ARLOPzhKJHlFAWQqAoaqKKks5AESZU1QZEalacjSDIQypqGAOEXGioBIk2TKEpIk
+RpY4wFNOY3sMk/LxxCYsIpIRvciAdpmFqX137+xMcLk9rimJk5wdc3mS0/5sXsHh
+pB+e4cnJry6nRtvqjCU9b9uPePPmjd4sH6l798XfcnHbod7WW/H2wPorPfvj2c3X
++nsTvYdy+4oXr37pOy4+L6z8mH2vc6DmRG7BnsKlaxuVkZ7g4gb/hzc/xwr6Lr9c
+sW7X9YE5T3Naph0Lz1r4+Yn29Uxy7MXQjTbv9BmpzU0VX7vaOpPc9TX9rV0lQ+6q
+g0kPls2Pj17tHG7amL83ePvSmlNjMKv7m/0hKK1MV2uHZx9PORe4n9GzaUesYdya
+6Wr5Vrt55Htj9/nCwMPzy7fMrRy0f6I+/7O0nPpFry/0r93ckZBeuuDxgY5PSzLy
+7p6tzA+unj11cO6G1JP3BgJH/cH+0zXz9F9w4UY2
+=od0z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/charifmews
+
+==================================================================
