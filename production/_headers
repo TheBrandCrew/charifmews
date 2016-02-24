@@ -1,3 +1,5 @@
-/favicon/*
-  Cache-Control: max-age=3600000
-
+## A path:
+/*
+  # Headers for that path:
+  Vary: Accept-Encoding
+  Cache-Control: max-age=2592000, must-revalidate
